@@ -28,7 +28,7 @@ public class Main {
                 System.out.println("Ingrese el segundo numero:");
                 num = sc.nextInt();
                 res = res - num;
-                System.out.println("El valor total de la resta es: " + res);
+                System.out.println("El valor TOTAL de la resta es: " + res);
                 break;
         }
     }
