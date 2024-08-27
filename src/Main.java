@@ -3,11 +3,14 @@ public class Main {
     public static void main(String[] args) {
         //Brayan David Cuitiva Umbarila
         //Código de suma y resta
+        //Elkin Yamith Almonacid
+        //Programa que permite escoger entre multiplicacion y division, pide dos numeros y realiza la operación.
         //22-08-2024
         Scanner sc = new Scanner (System.in);
         int sum = 0, num = 0, res = 0, op = 0;
+        int x, num1, num2, mult=0, div=0;
         System.out.println("Que operacion desea hacer: ");
-        System.out.println("1. Suma\n2. Resta");
+        System.out.println("1. Suma\n2. Resta\n3.Multiplicacion\n4.Division");
         op = sc.nextInt();
         switch(op){
             case 1:
@@ -29,6 +32,22 @@ public class Main {
                 num = sc.nextInt();
                 res = res - num;
                 System.out.println("El valor TOTAL de la resta es: " + res);
+                break;
+            case 3:
+                System.out.println("Ingrese el primer numero:");
+                num1=sc.nextInt();
+                System.out.println("Ingrese el segundo numero");
+                num2=sc.nextInt();
+                mult=num1*num2;
+                System.out.println("El resultado es: "+mult);
+                break;
+            case 4:
+                System.out.println("Ingrese el numero a dividir;");
+                num1=sc.nextInt();
+                System.out.println("Ingrese el numero que divide:");
+                num2=sc.nextInt();
+                div=num1/num2;
+                System.out.println("El resultado es: "+div);
                 break;
         }
     }
